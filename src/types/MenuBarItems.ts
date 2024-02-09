@@ -31,6 +31,10 @@ const MenuBarItems: MenuItem[] = [
 				label: 'Layout Modal',
 				to: '/modal',
 			},
+			{
+				label: 'Component Modal',
+				to: '/component',
+			},
 		],
 	},
 	{

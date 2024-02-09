@@ -14,6 +14,7 @@ import NodeStationPage from './pages/NodeStationPage';
 import SplitScreenParentPage from './pages/SplitScreenParentPage';
 import ListParentPage from './pages/ListParentPage';
 import ModalParentPage from './pages/ModalParentPage';
+import ContainerComponentParent from './pages/ContainerComponentParent';
 
 let App = () => {
 	return (
@@ -37,6 +38,10 @@ let App = () => {
 						<Route
 							path='/list'
 							element={<ListParentPage />}
+						/>
+						<Route
+							path='/component'
+							element={<ContainerComponentParent />}
 						/>
 						<Route
 							path='/modal'

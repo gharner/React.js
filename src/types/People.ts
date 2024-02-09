@@ -9,6 +9,10 @@ export interface PersonProps {
 	person: Person;
 }
 
+export interface UserProps {
+	users: Person[];
+}
+
 const People: Person[] = [
 	{
 		name: 'John Doe',
