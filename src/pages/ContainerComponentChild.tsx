@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { PersonProps } from '../types/People';
 
 const ContainerComponentChild: React.FC<any> = ({ person }) => {
 	useEffect(() => {

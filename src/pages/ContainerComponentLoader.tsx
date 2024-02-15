@@ -5,7 +5,7 @@ interface FetchedData {
 	Users: Person[];
 }
 const ContainerComponentLoader: React.FC<any> = ({ children }) => {
-	const [data, setData] = useState<FetchedData | null>(null);
+	const [people, setData] = useState<FetchedData | null>(null);
 	const [error, setError] = useState<null>(null);
 	const [loading, setLoading] = useState<boolean>(false);
 
@@ -20,13 +20,13 @@ const ContainerComponentLoader: React.FC<any> = ({ children }) => {
 
 	if (loading) return <h1 className='blink'>Loading...</h1>;
 	if (error) return <pre>{JSON.stringify(error)}</pre>;
-	if (!data) return null;
+	if (!people) return null;
 
 	return (
 		<>
 			{React.Children.map(children, child => {
 				if (React.isValidElement(child)) {
-					const firstUser = data.Users[0];
+					const firstUser = people.Users[0];
 					return React.cloneElement(child as React.ReactElement<any>, {
 						person: {
 							firstUser,

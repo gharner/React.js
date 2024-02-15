@@ -32,7 +32,7 @@ const MenuBarItems: MenuItem[] = [
 				to: '/modal',
 			},
 			{
-				label: 'Component Modal',
+				label: 'Component Model',
 				to: '/component',
 			},
 		],
