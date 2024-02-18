@@ -35,6 +35,10 @@ const MenuBarItems: MenuItem[] = [
 				label: 'Component Model',
 				to: '/component',
 			},
+			{
+				label: 'Onboarding',
+				to: '/onboarding',
+			},
 		],
 	},
 	{
@@ -48,6 +52,14 @@ const MenuBarItems: MenuItem[] = [
 			{
 				label: 'Cities From Firestore',
 				to: '/cities',
+			},
+			{
+				label: 'Users From JSON',
+				to: '/users',
+			},
+			{
+				label: 'Products From JSON',
+				to: '/products',
 			},
 			{
 				label: 'Space Station',

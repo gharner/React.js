@@ -15,6 +15,9 @@ import SplitScreenParentPage from './pages/SplitScreenParentPage';
 import ListParentPage from './pages/ListParentPage';
 import ModalParentPage from './pages/ModalParentPage';
 import ContainerComponentParent from './pages/ContainerComponentParent';
+import OnboardingFlowParent from './pages/OnBoardingFlowParent';
+import PythonUsersPage from './pages/PythonUsersPage';
+import PythonProductsPage from './pages/PythonProductsPage';
 
 let App = () => {
 	return (
@@ -56,6 +59,14 @@ let App = () => {
 							element={<PythonCitiesPage />}
 						/>
 						<Route
+							path='/users'
+							element={<PythonUsersPage />}
+						/>
+						<Route
+							path='/products'
+							element={<PythonProductsPage />}
+						/>
+						<Route
 							path='/station'
 							element={<PythonStationPage />}
 						/>
@@ -66,6 +77,10 @@ let App = () => {
 						<Route
 							path='/node_station'
 							element={<NodeStationPage />}
+						/>
+						<Route
+							path='/onboarding'
+							element={<OnboardingFlowParent />}
 						/>
 						<Route
 							path='/create'
