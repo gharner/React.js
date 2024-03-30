@@ -72,10 +72,6 @@ const MenuBarItems: MenuItem[] = [
 		icon: 'pi pi-fw pi-clone',
 		items: [
 			{
-				label: 'Node.js API',
-				to: '/node',
-			},
-			{
 				label: 'Space Station',
 				to: '/node_station',
 			},
